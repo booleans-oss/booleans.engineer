@@ -4,16 +4,17 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: "Booleans's Portfolio",
+    title: 'booleans-oss | portfolio',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: "A fullstack developer's portfolio",
+        content:
+          "Hello there, I'm booleans, a fullstack developer interested in all the new web techologies.",
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/assets/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
   },
 
   css: ['@/assets/styles/globals.scss', '@/assets/styles/reset.min.scss'],
