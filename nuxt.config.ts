@@ -14,11 +14,10 @@ export default defineNuxtConfig({
           "Hello there, I'm booleans, a fullstack developer interested in all the new web techologies.",
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   css: ['@/assets/styles/globals.scss', '@/assets/styles/reset.min.scss'],
-
   plugins: [],
 
   build: {},
