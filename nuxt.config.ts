@@ -4,14 +4,66 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'booleans-oss | portfolio',
+    title: 'booleans-oss — Portfolio',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
         content:
-          "Hello there, I'm booleans, a fullstack developer interested in all the new web techologies.",
+          "Hello there, I'm booleans-oss, self-taught web developer and devops engineer. To learn more about me, go on my website.",
+      },
+      {
+        hid: 'og:type',
+        name: 'og:type',
+        content: 'website',
+      },
+      {
+        hid: 'og:url',
+        name: 'og:url',
+        content: 'https://booleans.engineer',
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'booleans-oss — Portfolio',
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          "Hello there, I'm booleans-oss, self-taught web developer and devops engineer. To learn more about me, go on my website.",
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: '/banner.png',
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://booleans.engineer',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'booleans-oss — Portfolio',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          "Hello there, I'm booleans-oss, self-taught web developer and devops engineer. To learn more about me, go on my website.",
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '/banner.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
