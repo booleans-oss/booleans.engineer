@@ -4,29 +4,25 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'Booleans\'s Portfolio',
+    title: "Booleans's Portfolio",
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'A fullstack developer\'s portfolio',
+        content: "A fullstack developer's portfolio",
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/assets/favicon.ico' }],
   },
 
-  css: [],
+  css: ['@/assets/styles/globals.scss', '@/assets/styles/reset.min.scss'],
 
   plugins: [],
 
   build: {},
 
-  buildModules: [
-    'nuxt-windicss',
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/svg',
-  ],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/svg', 'unplugin-icons/nuxt'],
 
   components: true,
 
@@ -41,17 +37,5 @@ export default defineNuxtConfig({
         ],
       }),
     ],
-  },
-  windicss: {
-    analyze: {
-      analysis: {
-        interpretUtilities: false,
-      },
-      server: {
-        port: 4000,
-        open: false,
-      },
-    },
-    scan: true,
   },
 })
