@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         hid: 'description',
         name: 'description',
         content:
-          "I realise your dream websites in a few clicks 🚀. I spend time struggling so you don't have to. The magic of web development will help you. I'm a fullstack developer willing to help.",
+          "Yet another web developer making a simple portfolio. But this time you'll the a look a it 🔥.",
       },
       {
         hid: 'og:type',
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         hid: 'og:description',
         name: 'og:description',
         content:
-          "I realise your dream websites in a few clicks 🚀. I spend time struggling so you don't have to. The magic of web development will help you. I'm a fullstack developer willing to help.",
+          "Yet another web developer making a simple portfolio. But this time you'll the a look a it 🔥.",
       },
       {
         hid: 'og:image',
@@ -58,7 +58,7 @@ export default defineNuxtConfig({
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          "I realise your dream websites in a few clicks 🚀. I spend time struggling so you don't have to. The magic of web development will help you. I'm a fullstack developer willing to help.",
+          "Yet another web developer making a simple portfolio. But this time you'll the a look a it 🔥.",
       },
       {
         hid: 'twitter:image',
