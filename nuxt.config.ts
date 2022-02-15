@@ -10,8 +10,7 @@ export default defineNuxtConfig({
       {
         hid: 'description',
         name: 'description',
-        content:
-          "Yet another web developer making a simple portfolio. But this time you'll the a look a it 🔥.",
+        content: 'Yet another web developer making a simple portfolio 🔥.',
       },
       {
         hid: 'og:type',
@@ -31,8 +30,7 @@ export default defineNuxtConfig({
       {
         hid: 'og:description',
         name: 'og:description',
-        content:
-          "Yet another web developer making a simple portfolio. But this time you'll the a look a it 🔥.",
+        content: 'Yet another web developer making a simple portfolio 🔥.',
       },
       {
         hid: 'og:image',
@@ -57,8 +55,7 @@ export default defineNuxtConfig({
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content:
-          "Yet another web developer making a simple portfolio. But this time you'll the a look a it 🔥.",
+        content: 'Yet another web developer making a simple portfolio 🔥.',
       },
       {
         hid: 'twitter:image',
