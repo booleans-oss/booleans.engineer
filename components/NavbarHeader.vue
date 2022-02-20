@@ -21,12 +21,31 @@
 export default {
   data() {
     return {
-      isActive: this.$colorMode.preference === 'dark',
+      isActive: false,
+    }
+  },
+  mounted() {
+    const theme = localStorage.getItem('theme')
+    if (theme) {
+      this.isActive = theme === 'dark'
+      if (theme === 'dark') document.documentElement.classList.add('dark-mode')
+    } else {
+      this.isActive = false
+      localStorage.setItem('theme', 'light')
     }
   },
   methods: {
     handleSwitch() {
-      this.$colorMode.preference = this.isActive ? 'light' : 'dark'
+      const theme = localStorage.getItem('theme')
+      if (theme === 'dark') {
+        localStorage.setItem('theme', 'light')
+        document.documentElement.classList.remove('dark-mode')
+        this.isActive = false
+      } else {
+        localStorage.setItem('theme', 'dark')
+        document.documentElement.classList.add('dark-mode')
+        this.isActive = true
+      }
     },
   },
 }

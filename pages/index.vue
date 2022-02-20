@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header">
-      <img src="@/assets/images/logo.png" alt="logo" />
+      <nuxt-img src="/assets/images/logo.png" alt="logo" />
     </div>
     <div class="title">
       Hey, I'm <span style="color: #ffb84c">&nbsp;Clement</span>

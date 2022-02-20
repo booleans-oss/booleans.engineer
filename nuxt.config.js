@@ -80,12 +80,11 @@ export default {
     'nuxt-vite',
     '@nuxtjs/stylelint-module',
     'unplugin-icons/nuxt',
-    '@nuxt/image',
-    '@nuxtjs/color-mode',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/image',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
@@ -96,6 +95,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   vite: {
+    ssr: true,
     build: true,
     plugins: [
       UnpluginComponentsVite({
