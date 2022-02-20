@@ -77,7 +77,6 @@ export default {
   buildModules: [
     '@nuxt/typescript-build',
     '@nuxt/postcss8',
-    '@nuxtjs/mdx',
     'nuxt-vite',
     '@nuxtjs/stylelint-module',
     'unplugin-icons/nuxt',
