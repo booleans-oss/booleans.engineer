@@ -80,6 +80,8 @@ export default {
     'nuxt-vite',
     '@nuxtjs/stylelint-module',
     'unplugin-icons/nuxt',
+    '@nuxt/image',
+    '@nuxtjs/color-mode',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

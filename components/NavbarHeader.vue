@@ -1,5 +1,14 @@
 <template>
   <div class="navbar">
+    <label class="switch">
+      <input v-model="isActive" type="checkbox" @click="handleSwitch" />
+      <span class="track">
+        <span class="handle"
+          ><IconBx:bxs-moon v-if="isActive" /><IconMdi:white-balance-sunny
+            v-if="!isActive"
+        /></span>
+      </span>
+    </label>
     <div class="contact">
       <button>
         <IconMdi:hand-peace style="margin-right: 5px" />Contact me
@@ -7,6 +16,21 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isActive: false,
+    }
+  },
+  methods: {
+    handleSwitch() {
+      this.$colorMode.preference = this.isActive ? 'light' : 'dark'
+    },
+  },
+}
+</script>
 
 <style scoped lang="scss">
 .navbar {
@@ -43,6 +67,57 @@
   .contact {
     margin: 0;
     order: 0;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  input {
+    display: none;
+  }
+  .track {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 0 0.3rem;
+    transition: 0.4s;
+    .handle {
+      display: flex;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      color: rgba(36, 37, 45, 1);
+      border-radius: 10px;
+      transition: 0.4s;
+    }
+  }
+  input:checked + .track {
+    background-color: rgba(36, 37, 45, 1);
+    border: 2px solid rgba(36, 37, 45, 1);
+
+    .handle {
+      color: white;
+    }
+  }
+  input:focus + .track {
+    box-shadow: 0 0 1px orange;
+  }
+  input:checked + .track > .handle {
+    transform: translateX(30px);
   }
 }
 </style>

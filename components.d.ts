@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    'IconBx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
     'IconFileIcons:kubernetes': typeof import('~icons/file-icons/kubernetes')['default']
     'IconIc:baselineSchool': typeof import('~icons/ic/baseline-school')['default']
     'IconIc:baselineVerified': typeof import('~icons/ic/baseline-verified')['default']
@@ -30,6 +31,7 @@ declare module 'vue' {
     'IconMdi:react': typeof import('~icons/mdi/react')['default']
     'IconMdi:twitter': typeof import('~icons/mdi/twitter')['default']
     'IconMdi:vuejs': typeof import('~icons/mdi/vuejs')['default']
+    'IconMdi:whiteBalanceSunny': typeof import('~icons/mdi/white-balance-sunny')['default']
     'IconPh:codeBold': typeof import('~icons/ph/code-bold')['default']
     'IconPh:terminalBold': typeof import('~icons/ph/terminal-bold')['default']
     'IconUil:externalLinkAlt': typeof import('~icons/uil/external-link-alt')['default']
