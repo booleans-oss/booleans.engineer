@@ -69,15 +69,15 @@
         </div>
         <div v-if="showExtraTags" class="badge sky-blue">
           <IconMdi:emoticon-tongue class="icon" />
-          /> Memer
+          Memer
         </div>
         <div v-if="showExtraTags" class="badge dark-purple">
           <IconMdi:format-paint class="icon" />
-          /> UI/UX Designer
+          UI/UX Designer
         </div>
         <div v-if="showExtraTags" class="badge pink">
           <IconMdi:piano class="icon" />
-          /> Pianist
+          Pianist
         </div>
         <div v-if="showExtraTags" class="badge purple">
           <IconMdi:map-outline class="icon" /> Remote Worker
