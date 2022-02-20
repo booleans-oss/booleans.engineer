@@ -2280,9 +2280,9 @@
     "@typescript-eslint/types" "5.12.0"
     eslint-visitor-keys "^3.0.0"
 
-"@vitejs/plugin-legacy@^1.5.3":
+"@vitejs/plugin-legacy@^1.6.0":
   version "1.7.1"
-  resolved "https://registry.npmjs.org/@vitejs/plugin-legacy/-/plugin-legacy-1.7.1.tgz#6236d2f5ea5f11f6406070bb69e700e781f86125"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-legacy/-/plugin-legacy-1.7.1.tgz#6236d2f5ea5f11f6406070bb69e700e781f86125"
   integrity sha512-RqgILXsGpfV7NHodVCdBVau8ss5+ynMXp6JGF/F7nhSy0bnwSQPlMS3KFqh7twfifXK8VuMriqfU4CxOiqmNnA==
   dependencies:
     "@babel/standalone" "^7.17.2"
@@ -7774,22 +7774,23 @@ num2fraction@^1.2.2:
   resolved "https://registry.npmjs.org/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-vite@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.npmjs.org/nuxt-vite/-/nuxt-vite-0.2.4.tgz#dede42b4877c50afd07c3a3ee87cba9a7add8198"
-  integrity sha512-BG1rJSynm53kGEnaUxcuaWQpm6Ltgt5dq8l6qbknGMvz5vzD5TUcDkHdadXUuln+XGj7GLNYiES7qIcJoCAkrQ==
+nuxt-vite@0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/nuxt-vite/-/nuxt-vite-0.3.5.tgz#89e01fdb1d28c4d3c5cc82f6d1efc77a46332205"
+  integrity sha512-rAtmMycDU4k88S/H8WiCCqzr99lnYPTxgekU7+HYVoLHE62aol2E0/ci1MjBfBVg5DbhKHvqDn1nLCL5ye4Vsg==
   dependencies:
-    "@vitejs/plugin-legacy" "^1.5.3"
+    "@vitejs/plugin-legacy" "^1.6.0"
     consola "^2.15.3"
+    defu "^5.0.0"
     fs-extra "^10.0.0"
+    pathe "^0.2.0"
     postcss-import "^14.0.2"
     postcss-import-resolver "^2.0.0"
     postcss-preset-env "^6.7.0"
     postcss-url "^10.1.3"
     semver "^7.3.5"
     ufo "^0.7.9"
-    upath "^2.0.1"
-    vite "^2.5.4"
+    vite "^2.5.7"
     vite-plugin-vue2 "^1.8.2"
 
 nuxt@^2.15.8:
@@ -8211,6 +8212,11 @@ pathe@^0.0.2:
   version "0.0.2"
   resolved "https://registry.npmjs.org/pathe/-/pathe-0.0.2.tgz#d690780e578a8127e1d65828387609c153afc309"
   integrity sha512-mmK20YtPb4yXHlaPuOD/uPIpRu7iIK45GA/GiRSlNpIdfWDG5aEQmFT1HHtBmJB+t/6DvFOtOsEipsPA8Bx2cw==
+
+pathe@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
+  integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
 
 pbkdf2@^3.0.3:
   version "3.1.2"
@@ -11482,9 +11488,9 @@ vite-plugin-vue2@^1.8.2:
     source-map "^0.7.3"
     vue-template-es2015-compiler "^1.9.1"
 
-vite@^2.5.4:
+vite@^2.5.7:
   version "2.8.4"
-  resolved "https://registry.npmjs.org/vite/-/vite-2.8.4.tgz#4e52a534289b7b4e94e646df2fc5556ceaa7336b"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.8.4.tgz#4e52a534289b7b4e94e646df2fc5556ceaa7336b"
   integrity sha512-GwtOkkaT2LDI82uWZKcrpRQxP5tymLnC7hVHHqNkhFNknYr0hJUlDLfhVRgngJvAy3RwypkDCWtTKn1BjO96Dw==
   dependencies:
     esbuild "^0.14.14"
