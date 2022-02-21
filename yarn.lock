@@ -1559,9 +1559,9 @@
     node-html-parser "^3.2.0"
     ufo "^0.7.4"
 
-"@nuxt/image@^0.6.2":
+"@nuxt/image@0.6.2":
   version "0.6.2"
-  resolved "https://registry.npmjs.org/@nuxt/image/-/image-0.6.2.tgz#983247dbedf3d1eb653685635365bb24396aea49"
+  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.6.2.tgz#983247dbedf3d1eb653685635365bb24396aea49"
   integrity sha512-2Q4Atp/vceHKHMarKnLdy+z4zAaYCWy0wrK2G1tjrmhXOhhJZ5PhqURodlBu2Qb8wAMZKrm2c48rM58tFR7XYA==
   dependencies:
     consola "^2.15.3"
@@ -1830,9 +1830,9 @@
     consola "^2.15.0"
     eslint-webpack-plugin "^2.4.1"
 
-"@nuxtjs/i18n@^7.2.0":
+"@nuxtjs/i18n@7.2.0":
   version "7.2.0"
-  resolved "https://registry.npmjs.org/@nuxtjs/i18n/-/i18n-7.2.0.tgz#f44fd61e3ec3c63663c392159e2d5f14d4f1091e"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/i18n/-/i18n-7.2.0.tgz#f44fd61e3ec3c63663c392159e2d5f14d4f1091e"
   integrity sha512-fO/QRMxZ0t6LpYJ7ti6mHc0lsog4SMr7Xll3d45zdVSI7+5eBE1YcoG8yXv1sndGQZoq8k0iD1dXuAJA6UL5ww==
   dependencies:
     "@babel/parser" "^7.16.2"
