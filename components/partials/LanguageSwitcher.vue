@@ -18,7 +18,7 @@
           class="dropdown-item"
           :class="{ active: locale.code === $i18n.locale }"
         >
-          {{ locale.name }}
+          {{ $t(`languages.${locale.code}`) }}
         </NuxtLink>
       </div>
     </div>

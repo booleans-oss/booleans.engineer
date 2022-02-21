@@ -1,5 +1,9 @@
 export default {
   separator: 'et',
+  languages: {
+    en: 'Anglais',
+    fr: 'Français',
+  },
   navbar: {
     contact: 'Contactez-moi',
   },

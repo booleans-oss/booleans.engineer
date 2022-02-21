@@ -1,4 +1,8 @@
 export default {
+  languages: {
+    en: 'English',
+    fr: 'French',
+  },
   separator: 'and',
   navbar: {
     contact: 'Contact me',
