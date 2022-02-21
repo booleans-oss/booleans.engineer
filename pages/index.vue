@@ -4,7 +4,8 @@
       <nuxt-img src="/assets/images/logo.png" alt="logo" />
     </div>
     <div class="title">
-      Hey, I'm <span style="color: #ffb84c">&nbsp;Clement</span>
+      {{ $t('index.header.title') }}
+      <span style="color: #ffb84c">&nbsp;Clement</span>
       <IconIc:baseline-verified
         style="font-size: 15pt; margin-left: 0.5rem; color: #643aea"
       />
@@ -12,48 +13,48 @@
     <div class="profile-details">
       <ul class="list-inline">
         <li>@booleans-oss</li>
-        <li>19 y.o.</li>
-        <li>Full Stack Developer</li>
-        <li>he/him</li>
+        <li>{{ $t('index.header.age') }}</li>
+        <li>{{ $t('index.header.job') }}</li>
+        <li>{{ $t('index.header.pronouns') }}</li>
       </ul>
     </div>
     <div class="profile-badges">
       <div class="profile-badges-panel">
         <div class="badge sky-blue">
           <IconPh:code-bold class="icon" />
-          Fullstack Developer
+          {{ $t('index.badges.fullstack') }}
         </div>
         <div class="badge pink">
           <IconIc:baseline-school class="icon" />
-          Self-Taught
+          {{ $t('index.badges["self-taught"]') }}
         </div>
         <div class="badge lime-green">
           <IconMdi:book-open-page-variant class="icon" />
-          Student
+          {{ $t('index.badges.student') }}
         </div>
         <div class="badge orange">
           <IconMdi:bag-personal class="icon" />
-          Freelancer
+          {{ $t('index.badges.freelancer') }}
         </div>
         <div class="badge yellow">
           <IconMdi:palette class="icon" />
-          Visual Design
+          {{ $t('index.badges.design') }}
         </div>
         <div class="badge green">
           <IconPh:terminal-bold class="icon" />
-          Developer Experience
+          {{ $t('index.badges["dev-experience"]') }}
         </div>
         <div class="badge red">
           <IconMdi:account-group class="icon" />
-          Leader
+          {{ $t('index.badges.leader') }}
         </div>
         <div class="badge pale-blue">
           <IconMdi:coffee class="icon" />
-          Mentor
+          {{ $t('index.badges.mentor') }}
         </div>
         <div class="badge purple">
           <IconMdi:microsoft-azure-devops class="icon" />
-          DevOps Engineer
+          {{ $t('index.badges.devops') }}
         </div>
 
         <div
@@ -65,34 +66,34 @@
         </div>
         <div v-if="showExtraTags" class="badge orange">
           <IconMdi:lock-open-check class="icon" />
-          Open Source Contributor
+          {{ $t('index.badges["open-source"]') }}
         </div>
         <div v-if="showExtraTags" class="badge sky-blue">
           <IconMdi:emoticon-tongue class="icon" />
-          Memer
+          {{ $t('index.badges.memer') }}
         </div>
         <div v-if="showExtraTags" class="badge dark-purple">
           <IconMdi:format-paint class="icon" />
-          UI/UX Designer
+          {{ $t('index.badges["ui-ux"]') }}
         </div>
         <div v-if="showExtraTags" class="badge pink">
           <IconMdi:piano class="icon" />
-          Pianist
+          {{ $t('index.badges.pianiste') }}
         </div>
         <div v-if="showExtraTags" class="badge purple">
-          <IconMdi:map-outline class="icon" /> Remote Worker
+          <IconMdi:map-outline class="icon" /> {{ $t('index.badges.remote') }}
         </div>
         <div v-if="showExtraTags" class="badge sky-blue">
           <IconMdi:chess-king class="icon" />
-          Chess Player
+          {{ $t('index.badges.chess') }}
         </div>
         <div v-if="showExtraTags" class="badge yellow">
           <IconMdi:apple class="icon" />
-          OS X User
+          {{ $t('index.badges["os-x"]') }}
         </div>
         <div v-if="showExtraTags" class="badge sky-blue">
           <IconMdi:microsoft-visual-studio-code class="icon" />
-          Visual Studio Code User
+          {{ $t('index.badges.vsc') }}
         </div>
         <div v-if="showExtraTags" class="badge lime-green">
           <IconMdi:nodejs class="icon" />
@@ -131,42 +132,34 @@
           class="badge"
           @click="showExtraTags = !showExtraTags"
         >
-          Show less
+          {{ $t('index.badges.less') }}
         </div>
       </div>
     </div>
     <div class="profile-description">
-      <p>Hello there!</p>
-      <p>
-        I am a self-taught fullstack developer who is always looking for
-        knowledge. I started coding in 2017 but I really got into it during the
-        first lockdown (<em>thanks covid for that!</em>). Since then, I've been
-        climbing the learning curve to the role of fullstack developer.
-      </p>
-      <p>
-        I'm currently freelancing as a fullstack developer, offering my
-        services. But I am still learning on the side: at the moment, I'm
-        mastering Kubernetes and Docker to finish the road to DevOps Engineering
-        (<em>it's a long road though</em>).
-      </p>
+      <p>{{ $t('index.about.title') }}</p>
+      <p v-html="$t('index.about.first')"></p>
+      <p v-html="$t('index.about.second')"></p>
       <p>
         <IconMdi:emoticon-lol
           class="icon"
           style="font-size: 12px; margin-right: 0.6rem"
         />
-        love memes so feel free to send me memes and jokes. I believed strong
-        friendship can only start with a good meme.
+        {{ $t('index.about.third') }}
       </p>
       <p>
         <IconIc:twotone-waving-hand
           style="font-size: 12px; margin-right: 0.6rem"
         />
-        I'm open to <span class="blue">Jobs</span>,
-        <span class="orange">Interships</span>,
-        <span class="yellow">Tutoring</span>,
-        <span class="purple">Live Streaming</span>,
-        <span class="green">Content Creation</span> and
-        <span class="red">Open Source Contribution</span>.
+        {{ $t('index.about.fourth') }}
+        <span class="blue">{{ $t('index.about.links.jobs') }} </span>,
+        <span class="orange">{{ $t('index.about.links.internships') }} </span>,
+        <span class="yellow">{{ $t('index.about.links.tutoring') }} </span>,
+        <span class="purple">{{ $t('index.about.links.live') }}</span
+        >, <span class="green">{{ $t('index.about.links.content') }}</span>
+        {{ $t('separator') }}
+        <span class="red">{{ $t('index.about.links["open-source"]') }}</span
+        >.
       </p>
     </div>
     <div class="socials">

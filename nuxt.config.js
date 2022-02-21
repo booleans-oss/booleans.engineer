@@ -71,7 +71,11 @@ export default {
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    // Equivalent to { path: '~/components' }
+    '~/components',
+    { path: '~/components/partials', extensions: ['vue'] },
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -83,14 +87,19 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxt/image',
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content',
-  ],
+  modules: ['@nuxtjs/i18n', '@nuxt/image', '@nuxt/content'],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.ts', dir: 'auto', name: 'English' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr.ts', dir: 'auto', name: 'French' },
+    ],
+    langDir: './locales',
+    defaultLocale: 'en',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

@@ -1,60 +1,27 @@
 <template>
   <div class="navbar">
-    <label class="switch">
-      <input v-model="isActive" type="checkbox" @click="handleSwitch" />
-      <span class="track">
-        <span class="handle"
-          ><IconBx:bxs-moon v-if="isActive" /><IconMdi:white-balance-sunny
-            v-if="!isActive"
-        /></span>
-      </span>
-    </label>
+    <div class="config">
+      <ThemeSwitcher />
+      <LanguageSwitcher />
+    </div>
     <div class="contact">
-      <button>
-        <IconMdi:hand-peace style="margin-right: 5px" />Contact me
+      <button class="btn">
+        <IconMdi:hand-peace style="margin-right: 5px" />
+        {{ $t('navbar.contact') }}
       </button>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isActive: false,
-    }
-  },
-  mounted() {
-    const theme = localStorage.getItem('theme')
-    if (theme) {
-      this.isActive = theme === 'dark'
-      if (theme === 'dark') document.documentElement.classList.add('dark-mode')
-    } else {
-      this.isActive = false
-      localStorage.setItem('theme', 'light')
-    }
-  },
-  methods: {
-    handleSwitch() {
-      const theme = localStorage.getItem('theme')
-      if (theme === 'dark') {
-        localStorage.setItem('theme', 'light')
-        document.documentElement.classList.remove('dark-mode')
-        this.isActive = false
-      } else {
-        localStorage.setItem('theme', 'dark')
-        document.documentElement.classList.add('dark-mode')
-        this.isActive = true
-      }
-    },
-  },
-}
-</script>
-
 <style scoped lang="scss">
+.config {
+  display: flex;
+  gap: 3rem;
+}
 .navbar {
   position: absolute;
   display: flex;
+  align-items: center;
   width: 100vw;
   padding: 0.7rem 4rem;
   z-index: 100;
@@ -62,10 +29,12 @@ export default {
 
 .contact {
   font-family: 'Inter';
+  display: flex;
+  gap: 2rem;
   margin-left: auto;
   order: 2;
 
-  button {
+  .btn {
     font-size: 14px;
     font-weight: 500;
     padding: 1rem 1rem;
@@ -86,56 +55,6 @@ export default {
   .contact {
     margin: 0;
     order: 0;
-  }
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  align-items: center;
-  width: 60px;
-  height: 30px;
-  input {
-    display: none;
-  }
-  .track {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 0 0.3rem;
-    transition: 0.4s;
-    .handle {
-      display: flex;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      color: rgba(36, 37, 45, 1);
-      border-radius: 10px;
-      transition: 0.4s;
-    }
-  }
-  input:checked + .track {
-    background-color: rgba(36, 37, 45, 1);
-    border: 2px solid rgba(36, 37, 45, 1);
-
-    .handle {
-      color: white;
-    }
-  }
-  .track {
-    box-shadow: var(--inner-shadow-1);
-  }
-  input:checked + .track > .handle {
-    transform: translateX(30px);
   }
 }
 </style>
