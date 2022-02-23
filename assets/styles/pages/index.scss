@@ -211,8 +211,11 @@
     }
 
     p:nth-child(5) {
-      line-height: 27.2px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       span {
+        margin: 0 0.125rem;
         cursor: pointer;
         background-color: var(--gray-1);
         padding: 0.15rem 0.5rem;
