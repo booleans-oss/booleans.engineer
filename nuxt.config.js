@@ -87,7 +87,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/i18n', '@nuxt/image', '@nuxt/content'],
+  modules: ['@nuxtjs/i18n', '@nuxt/image', '@nuxt/content', '@nuxtjs/critters'],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
