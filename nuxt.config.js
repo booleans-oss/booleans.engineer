@@ -90,7 +90,16 @@ export default {
   modules: ['@nuxtjs/i18n', '@nuxt/image', '@nuxt/content'],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    liveEdit: false,
+    useCache: true,
+    markdown: {
+      remarkPlugins: [
+        ['rehype-autolink-headings', { behavior: 'before', content: '#' }],
+        'rehype-slug',
+      ],
+    },
+  },
 
   i18n: {
     locales: [
