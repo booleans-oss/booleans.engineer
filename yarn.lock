@@ -1819,9 +1819,9 @@
     webpack-node-externals "^3.0.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/critters@^0.2.0":
+"@nuxtjs/critters@0.2.0":
   version "0.2.0"
-  resolved "https://registry.npmjs.org/@nuxtjs/critters/-/critters-0.2.0.tgz#b0e45c357477924bb09c04197f3dbfec8177abf2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/critters/-/critters-0.2.0.tgz#b0e45c357477924bb09c04197f3dbfec8177abf2"
   integrity sha512-lkuutn1MSJSGCx7ldRP4pUBxVl8CaJy2vfQjijeOpxhJEYAt3Wh9RjGzTJZYSKH8nLh05nyL7eHMEm1kzcl8NA==
   dependencies:
     "@nuxt/kit" "0.6.4"
@@ -10002,9 +10002,9 @@ pretty-time@^1.1.0:
   resolved "https://registry.npmjs.org/pretty-time/-/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
 
-prism-theme-vars@^0.2.2:
+prism-theme-vars@0.2.2:
   version "0.2.2"
-  resolved "https://registry.npmjs.org/prism-theme-vars/-/prism-theme-vars-0.2.2.tgz#a4c8dd0bfdb76c9b50a6ad8cd99a9ebe7a921a64"
+  resolved "https://registry.yarnpkg.com/prism-theme-vars/-/prism-theme-vars-0.2.2.tgz#a4c8dd0bfdb76c9b50a6ad8cd99a9ebe7a921a64"
   integrity sha512-EL9ifuU/F8tEldoCa2sspiiLWysCL54xDbf2gN/ubwdtbuJROqOGopG5kSwunapwaioT+jLUQ/Ky+7jnv62xJA==
 
 prismjs@^1.23.0:
@@ -10350,9 +10350,9 @@ regjsparser@^0.8.2:
   dependencies:
     jsesc "~0.5.0"
 
-rehype-autolink-headings@^6.1.1:
+rehype-autolink-headings@6.1.1:
   version "6.1.1"
-  resolved "https://registry.npmjs.org/rehype-autolink-headings/-/rehype-autolink-headings-6.1.1.tgz#0cb874a56f3de6ead1c2268d7f0fc5006f244db5"
+  resolved "https://registry.yarnpkg.com/rehype-autolink-headings/-/rehype-autolink-headings-6.1.1.tgz#0cb874a56f3de6ead1c2268d7f0fc5006f244db5"
   integrity sha512-NMYzZIsHM3sA14nC5rAFuUPIOfg+DFmf9EY1YMhaNlB7+3kK/ZlE6kqPfuxr1tsJ1XWkTrMtMoyHosU70d35mA==
   dependencies:
     "@types/hast" "^2.0.0"
@@ -10370,9 +10370,9 @@ rehype-raw@^5.0.0:
   dependencies:
     hast-util-raw "^6.1.0"
 
-rehype-slug@^5.0.1:
+rehype-slug@5.0.1:
   version "5.0.1"
-  resolved "https://registry.npmjs.org/rehype-slug/-/rehype-slug-5.0.1.tgz#6e732d0c55b3b1e34187e74b7363fb53229e5f52"
+  resolved "https://registry.yarnpkg.com/rehype-slug/-/rehype-slug-5.0.1.tgz#6e732d0c55b3b1e34187e74b7363fb53229e5f52"
   integrity sha512-X5v3wV/meuOX9NFcGhJvUpEjIvQl2gDvjg3z40RVprYFt7q3th4qMmYLULiu3gXvbNX1ppx+oaa6JyY1W67pTA==
   dependencies:
     "@types/hast" "^2.0.0"
