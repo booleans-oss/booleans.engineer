@@ -4,6 +4,8 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    ICarbonAccessibility: typeof import('~icons/carbon/accessibility')['default']
     'IconBx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
     'IconFileIcons:kubernetes': typeof import('~icons/file-icons/kubernetes')['default']
     'IconIc:baselineSchool': typeof import('~icons/ic/baseline-school')['default']
@@ -39,6 +41,9 @@ declare module 'vue' {
     'IconVscodeIcons:fileTypeDocker': typeof import('~icons/vscode-icons/file-type-docker')['default']
     'IconVscodeIcons:fileTypeMongo': typeof import('~icons/vscode-icons/file-type-mongo')['default']
     'IconVscodeIcons:fileTypeSvelte': typeof import('~icons/vscode-icons/file-type-svelte')['default']
+    LanguageSwitcher: typeof import('./src/components/partials/LanguageSwitcher.vue')['default']
+    NavbarHeader: typeof import('./src/components/NavbarHeader.vue')['default']
+    ThemeSwitcher: typeof import('./src/components/partials/ThemeSwitcher.vue')['default']
   }
 }
 
