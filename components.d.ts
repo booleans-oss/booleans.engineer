@@ -4,8 +4,6 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    ICarbonAccessibility: typeof import('~icons/carbon/accessibility')['default']
     'IconBx:bxsMoon': typeof import('~icons/bx/bxs-moon')['default']
     'IconFileIcons:kubernetes': typeof import('~icons/file-icons/kubernetes')['default']
     'IconIc:baselineSchool': typeof import('~icons/ic/baseline-school')['default']
@@ -47,4 +45,4 @@ declare module 'vue' {
   }
 }
 
-export {}
+export { }

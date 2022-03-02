@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="header">
-      <nuxt-img src="/assets/images/logo.png" alt="logo" />
+      <img src="@/assets/images/logo.png" alt="logo" />
     </div>
     <div class="title">
       {{ $t('index.header.title') }}
