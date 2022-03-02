@@ -1,11 +1,11 @@
 import './styles/globals.scss'
-import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import ENLocales from './locales/en'
-import IndexView from './pages/index.vue'
 import FRLocales from './locales/fr'
+import IndexView from './pages/index.vue'
 
 const routes = [{ path: '/', component: IndexView }]
 
