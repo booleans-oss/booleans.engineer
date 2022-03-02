@@ -23,11 +23,6 @@ export default defineComponent({
     LanguageSwitcher,
     ThemeSwitcher,
   },
-  data() {
-    return {
-      onMobile: document.documentElement.clientWidth <= 480,
-    }
-  },
 })
 </script>
 
