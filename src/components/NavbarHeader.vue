@@ -60,11 +60,18 @@ export default defineComponent({
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .navbar {
-    justify-content: center;
+    display: flex;
+    padding: 0.7rem 0.4rem;
+    gap: 2rem;
+
+    .config {
+      display: flex;
+      width: 90%;
+    }
   }
+
   .contact {
-    margin: 0;
-    order: 0;
+    width: 100% !important;
   }
 }
 </style>

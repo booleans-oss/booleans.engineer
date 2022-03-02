@@ -52,17 +52,16 @@ export default defineComponent({
     transition: all 200ms;
     font-size: 18px;
     color: #f5f5f5;
-    .actual {
-      display: none;
-    }
   }
   .dropdown-menu {
     background: #fff;
     border: 0;
+    position: absolute;
     border-radius: 0.25rem;
     box-shadow: -1px 2px 19px 3px rgba(14, 0, 40, 0.1);
     display: block;
     margin: 0;
+    top: 3rem;
     opacity: 0;
     padding: 0.25rem 0;
     transform: translateY(20px);
