@@ -6,11 +6,13 @@
     border-radius: 3px;
     margin: 0;
     margin-top: 2rem;
+    background-color: var(--gray-2);
   }
 }
 
 .article-title {
   font-family: 'Inter';
+  color: var(--gray-8);
   font-weight: 600;
   font-size: 2em;
   max-inline-size: none;
@@ -48,4 +50,14 @@
   font-family: 'Inter var';
   font-size: 14px;
   font-weight: 300;
+}
+
+.dark-mode {
+  .article-title {
+    color: white;
+  }
+
+  .separator {
+    background-color: var(--gray-8);
+  }
 }
