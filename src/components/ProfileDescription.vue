@@ -1,4 +1,5 @@
 <template>
+<div>
   <p>{{ $t('index.about.title') }}</p>
   <p v-html="$t('index.about.first')"></p>
   <p v-html="$t('index.about.second')"></p>
@@ -23,4 +24,5 @@
     <span class="red">{{ $t('index.about.links["open-source"]') }}</span
     >.
   </p>
+  </div>
 </template>
