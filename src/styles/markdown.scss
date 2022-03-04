@@ -24,6 +24,7 @@ h5 {
   .header-anchor {
     font-size: 30px;
     margin-left: -1em;
+    color: white;
     float: left;
     background: none;
     opacity: 0;
@@ -60,11 +61,11 @@ pre[class*='language-js'] {
     content: 'JS';
   }
 }
-pre[class*='language-js'] {
+pre[class*='language-json'] {
   &::before {
-    background-color: var(--red-6);
-    color: var(--gray-8);
-    content: 'npm';
+    background-color: var(--gray-9);
+    color: var(--green-4);
+    content: '{}';
   }
 }
 pre[class*='language-ts'] {
