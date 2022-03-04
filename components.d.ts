@@ -10,17 +10,22 @@ declare module 'vue' {
     'IconIc:baselineVerified': typeof import('~icons/ic/baseline-verified')['default']
     'IconIc:twotoneWavingHand': typeof import('~icons/ic/twotone-waving-hand')['default']
     'IconIon:language': typeof import('~icons/ion/language')['default']
+    'IconMdi:accountCircle': typeof import('~icons/mdi/account-circle')['default']
     'IconMdi:accountGroup': typeof import('~icons/mdi/account-group')['default']
     'IconMdi:apple': typeof import('~icons/mdi/apple')['default']
     'IconMdi:bagPersonal': typeof import('~icons/mdi/bag-personal')['default']
     'IconMdi:bookOpenPageVariant': typeof import('~icons/mdi/book-open-page-variant')['default']
     'IconMdi:chessKing': typeof import('~icons/mdi/chess-king')['default']
+    'IconMdi:clock': typeof import('~icons/mdi/clock')['default']
     'IconMdi:coffee': typeof import('~icons/mdi/coffee')['default']
     'IconMdi:emoticonLol': typeof import('~icons/mdi/emoticon-lol')['default']
     'IconMdi:emoticonTongue': typeof import('~icons/mdi/emoticon-tongue')['default']
     'IconMdi:formatPaint': typeof import('~icons/mdi/format-paint')['default']
     'IconMdi:github': typeof import('~icons/mdi/github')['default']
     'IconMdi:handPeace': typeof import('~icons/mdi/hand-peace')['default']
+    'IconMdi:label': typeof import('~icons/mdi/label')['default']
+    'IconMdi:lightning': typeof import('~icons/mdi/lightning')['default']
+    'IconMdi:lightningBolt': typeof import('~icons/mdi/lightning-bolt')['default']
     'IconMdi:lockOpenCheck': typeof import('~icons/mdi/lock-open-check')['default']
     'IconMdi:mapOutline': typeof import('~icons/mdi/map-outline')['default']
     'IconMdi:microsoftAzureDevops': typeof import('~icons/mdi/microsoft-azure-devops')['default']
@@ -45,4 +50,4 @@ declare module 'vue' {
   }
 }
 
-export { }
+export {}

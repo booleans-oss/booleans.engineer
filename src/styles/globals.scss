@@ -1,6 +1,9 @@
-@import 'https://unpkg.com/open-props';
-@import './reset.min.scss';
+@import 'open-props/style';
+@import 'open-props/normalize';
 
+html {
+  background-color: white;
+}
 .main {
   position: absolute;
   top: 0;
@@ -25,14 +28,17 @@
   font-family: 'Inter var';
   background-color: white;
   margin-top: 10.8rem;
-  width: 42vw;
+  width: 41.45vw;
   border-radius: 8px;
   height: 100%;
-  padding: 2.5rem;
+  padding: 2.5rem 2.3rem;
   color: black;
 }
 
 .dark-mode {
+  html {
+    background-color: var(--gray-9);
+  }
   .container {
     background-color: var(--gray-9);
     color: white;

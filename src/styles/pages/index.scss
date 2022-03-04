@@ -16,13 +16,14 @@
     letter-spacing: -1px;
     color: var(--gray-8);
     font-family: 'Inter var';
-    font-size: var(--font-size-5);
-    font-weight: 800;
+    font-size: var(--font-size-4);
+    font-weight: 700;
   }
 
   .profile-details {
     font-family: 'Inter var';
     font-weight: 300;
+    font-size: 12px;
     margin-top: 0.5rem;
     .list-inline {
       margin: 0;
@@ -30,6 +31,7 @@
       font-size: 14px;
       li {
         color: var(--gray-9);
+        padding: 0;
         display: inline;
 
         &::after {
@@ -48,11 +50,13 @@
   }
 
   .profile-badges {
+    margin: 0;
     font-family: 'Inter var';
     margin-top: 1.3rem;
-    font-size: 14px;
+    font-size: 13px;
 
     .profile-badges-panel {
+      margin-left: -8px;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -65,7 +69,7 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        font-weight: 500;
+        font-weight: 600;
         border-radius: 100px;
         padding: 0.58rem 1.07rem;
         color: var(--gray-9);
@@ -185,22 +189,22 @@
   }
 
   .profile-description {
-    color: var(--gray-9);
-    font-family: 'Inter var';
-    font-size: 14px;
-    font-weight: 300;
+    font-family: 'Inter';
     margin-top: 2rem;
-    line-height: 21px;
     padding: 0;
+    font-weight: 300;
+    width: 100%;
 
-    p:first-child {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 700;
+    p {
+      font-size: 14px;
+      color: rgb(241, 244, 249);
+      margin-top: 1rem;
+      max-inline-size: none;
     }
 
-    p:nth-child(2) {
-      margin-top: 0;
+    p:first-child {
+      font-size: 18px;
+      font-weight: 700;
     }
 
     p:nth-child(5) {
@@ -300,7 +304,6 @@
 
 .dark-mode {
   .container {
-    background-color: var(--gray-9);
     .title {
       color: white;
     }

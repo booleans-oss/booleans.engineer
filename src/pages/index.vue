@@ -143,13 +143,13 @@
       <p>
         <IconMdi:emoticon-lol
           class="icon"
-          style="font-size: 12px; margin-right: 0.6rem"
+          style="font-size: 12px; margin-right: 0.6rem; display: inline"
         />
         {{ $t('index.about.third') }}
       </p>
       <p>
         <IconIc:twotone-waving-hand
-          style="font-size: 12px; margin-right: 0.6rem"
+          style="font-size: 12px; margin-right: 0.6rem; display: inline"
         />
         {{ $t('index.about.fourth') }}
         <span class="blue">{{ $t('index.about.links.jobs') }} </span>,
