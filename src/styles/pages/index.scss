@@ -15,13 +15,13 @@
     line-height: 38px;
     letter-spacing: -1px;
     color: var(--gray-8);
-    font-family: 'Inter';
+    font-family: 'Inter var';
     font-size: var(--font-size-5);
     font-weight: 800;
   }
 
   .profile-details {
-    font-family: 'Inter';
+    font-family: 'Inter var';
     font-weight: 300;
     margin-top: 0.5rem;
     .list-inline {
@@ -48,7 +48,7 @@
   }
 
   .profile-badges {
-    font-family: 'Inter';
+    font-family: 'Inter var';
     margin-top: 1.3rem;
     font-size: 14px;
 
@@ -186,7 +186,7 @@
 
   .profile-description {
     color: var(--gray-9);
-    font-family: 'Inter';
+    font-family: 'Inter var';
     font-size: 14px;
     font-weight: 300;
     margin-top: 2rem;
