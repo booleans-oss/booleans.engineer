@@ -9,10 +9,8 @@
       </div>
       <hr class="separator" />
       <span v-if="article" class="article-date"
-        ><IconMdi:clock />{{
-          format(new Date(article.frontmatter.date), 'LLL d, yyyy')
-        }}
-        - {{ article.frontmatter.duration }}</span
+        ><IconMdi:clock />{{ formatDate(article.frontmatter.date) }} -
+        {{ article.frontmatter.duration }}</span
       >
       <div v-if="article" class="article-tags">
         <span
@@ -29,10 +27,9 @@
 </template>
 
 <script setup>
-import { format } from 'date-fns'
 import Prism from 'prismjs'
 import { ref } from 'vue'
-import '../styles/highlight.css'
+import { formatDate } from '@/scripts/date'
 import Test from '../content/test.md'
 
 window.Prism = window.Prism || {}

@@ -1,3 +1,4 @@
+import './styles/markdown.scss'
 import './styles/globals.scss'
 import { createRouter, createWebHistory } from 'vue-router'
 import { createApp } from 'vue'
@@ -17,8 +18,8 @@ const routes = [
 ]
 
 const i18n = createI18n({
-  locale: 'en', // set locale
-  fallbackLocale: 'en', // set fallback locale
+  locale: 'en',
+  fallbackLocale: 'en',
   messages: {
     en: ENLocales,
     fr: FRLocales,
