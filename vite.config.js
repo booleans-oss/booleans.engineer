@@ -1,20 +1,42 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 import Components from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import anchor from 'markdown-it-anchor'
+import Markdown from 'vite-plugin-md'
+import Prism from 'markdown-it-prism'
 
 const path = require('path')
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
+    }),
     Components({
       resolvers: [IconsResolver({ prefix: 'Icon' })],
     }),
     Icons(),
+    Markdown({
+      markdownItOptions: {
+        html: true,
+        linkify: true,
+        typographer: true,
+        quotes: '""\'\'',
+      },
+      wrapperComponent: 'post',
+      headEnabled: true,
+      markdownItSetup(md) {
+        md.use(Prism)
+        md.use(anchor, {
+          permalink: anchor.permalink.linkInsideHeader({
+            symbol: '#',
+            renderAttrs: () => ({ 'aria-hidden': 'true' }),
+          }),
+        })
+      },
+    }),
   ],
   resolve: {
     extensions: [

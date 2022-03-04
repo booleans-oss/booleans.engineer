@@ -13,19 +13,6 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
-import LanguageSwitcher from './partials/LanguageSwitcher.vue'
-import ThemeSwitcher from './partials/ThemeSwitcher.vue'
-
-export default defineComponent({
-  components: {
-    LanguageSwitcher,
-    ThemeSwitcher,
-  },
-})
-</script>
-
 <style scoped lang="scss">
 .config {
   display: flex;

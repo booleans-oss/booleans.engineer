@@ -21,10 +21,16 @@ export default defineComponent({
   },
   mounted() {
     const theme = localStorage.getItem('theme')
+    const html = document.getElementsByTagName('html')[0]
     if (theme) {
       this.isActive = theme === 'dark'
-      if (theme === 'dark') document.documentElement.classList.add('dark-mode')
+      if (theme === 'dark') {
+        html.classList.add('dark-mode')
+        html.style.backgroundColor = 'var(--gray-9)'
+      }
     } else {
+      html.classList.remove('dark-mode')
+      html.style.backgroundColor = 'white'
       this.isActive = false
       localStorage.setItem('theme', 'light')
     }
@@ -32,13 +38,16 @@ export default defineComponent({
   methods: {
     handleSwitch() {
       const theme = localStorage.getItem('theme')
+      const html = document.getElementsByTagName('html')[0]
       if (theme === 'dark') {
         localStorage.setItem('theme', 'light')
-        document.documentElement.classList.remove('dark-mode')
+        html.classList.remove('dark-mode')
+        html.style.backgroundColor = 'white'
         this.isActive = false
       } else {
         localStorage.setItem('theme', 'dark')
-        document.documentElement.classList.add('dark-mode')
+        html.classList.add('dark-mode')
+        html.style.backgroundColor = 'var(--gray-9)'
         this.isActive = true
       }
     },

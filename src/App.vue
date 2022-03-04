@@ -4,9 +4,14 @@
   </MainLayout>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 import MainLayout from './layouts/MainLayout'
+import Prism from 'prismjs'
+
+window.Prism = window.Prism || {}
+window.Prism.manual = true
+Prism.highlightAll()
 
 export default defineComponent({
   components: {

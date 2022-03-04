@@ -1,9 +1,63 @@
-.container {
-  color: var(--gray-1);
-  font-family: 'Inter';
+@import 'open-props/colors-hsl';
+.article-info {
+  .separator {
+    width: 23%;
+    height: 5px;
+    border-radius: 3px;
+    margin: 0;
+    margin-top: 2rem;
+    background-color: var(--gray-2);
+  }
 }
 
-.title {
-  font-weight: 800;
-  font-size: 36px;
+.article-title {
+  font-family: 'Inter';
+  color: var(--gray-8);
+  font-weight: 600;
+  font-size: 2em;
+  max-inline-size: none;
+}
+
+.article-date {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  font-size: 12px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.article-tags {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 1rem;
+
+  .article-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    gap: 0.5rem;
+    background-color: hsl(var(--red-5-hsl) / 30%);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--red-5);
+    cursor: pointer;
+  }
+}
+
+.article-description {
+  font-family: 'Inter var';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.dark-mode {
+  .article-title {
+    color: white;
+  }
+
+  .separator {
+    background-color: var(--gray-8);
+  }
 }
