@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="socials">
     <a
       href="https://twitter.com/BooleansO"
       target="_blank"

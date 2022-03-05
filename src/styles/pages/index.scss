@@ -197,7 +197,7 @@
 
     p {
       font-size: 14px;
-      color: rgb(241, 244, 249);
+      color: var(--gray-9);
       margin-top: 1rem;
       max-inline-size: none;
     }
@@ -270,11 +270,12 @@
       justify-content: center;
       color: black;
       transition: all 100ms ease-in-out;
+      background: none;
+      border-radius: 999px;
     }
 
     a:hover {
       background-color: var(--gray-1);
-      border-radius: 999px;
     }
   }
 }
@@ -330,7 +331,9 @@
     }
 
     .profile-description {
-      color: var(--gray-1);
+      p {
+        color: var(--gray-1);
+      }
 
       p:nth-child(5) {
         span {
