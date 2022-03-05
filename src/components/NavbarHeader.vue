@@ -9,7 +9,6 @@
         <IconMdi:hand-peace style="margin-right: 5px" />
         {{ $t('navbar.contact') }}
       </button>
-      <router-link to="/article"><button>Article</button></router-link>
     </div>
   </div>
 </template>
