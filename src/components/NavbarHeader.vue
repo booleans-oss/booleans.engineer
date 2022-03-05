@@ -9,11 +9,18 @@
         <IconMdi:hand-peace style="margin-right: 5px" />
         {{ $t('navbar.contact') }}
       </button>
+      <router-link to="/article"><button class="btn">
+        <IconMdi:library-books style="margin-right: 5px" />
+          Article 
+      </button></router-link>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+a {
+  background: none;
+}
 .config {
   display: flex;
   gap: 3rem;

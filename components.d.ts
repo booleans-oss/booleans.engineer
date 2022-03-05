@@ -25,6 +25,7 @@ declare module 'vue' {
     'IconMdi:formatPaint': typeof import('~icons/mdi/format-paint')['default']
     'IconMdi:github': typeof import('~icons/mdi/github')['default']
     'IconMdi:handPeace': typeof import('~icons/mdi/hand-peace')['default']
+    'IconMdi:libraryBooks': typeof import('~icons/mdi/library-books')['default']
     'IconMdi:lockOpenCheck': typeof import('~icons/mdi/lock-open-check')['default']
     'IconMdi:mapOutline': typeof import('~icons/mdi/map-outline')['default']
     'IconMdi:microsoftAzureDevops': typeof import('~icons/mdi/microsoft-azure-devops')['default']
