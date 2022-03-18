@@ -6,10 +6,10 @@ import { createHead } from '@vueuse/head'
 import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import ArticleView from './pages/article.vue'
+import BlogView from './pages/blog.vue'
 import ENLocales from './locales/en'
 import FRLocales from './locales/fr'
 import IndexView from './pages/index.vue'
-import BlogView from './pages/blog.vue'
 
 const head = createHead()
 
