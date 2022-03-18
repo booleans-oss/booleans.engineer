@@ -21,6 +21,7 @@ h4,
 h5 {
   margin: 2rem 0rem 1rem 0rem;
   color: var(--gray-8);
+  font-size: 30px;
 
   .header-anchor {
     font-size: 30px;
@@ -59,12 +60,18 @@ code {
 }
 pre[class*='language-js'] {
   &::before {
+    padding: 0.1rem;
+    border-radius: 2px;
+    font-size: 10px;
     background-color: var(--yellow-3);
     content: 'JS';
   }
 }
 pre[class*='language-json'] {
   &::before {
+    padding: 0.1rem;
+    border-radius: 2px;
+    font-size: 10px;
     background-color: var(--gray-9);
     color: var(--green-4);
     content: '{}';
@@ -72,6 +79,9 @@ pre[class*='language-json'] {
 }
 pre[class*='language-ts'] {
   &::before {
+    padding: 0.1rem;
+    border-radius: 2px;
+    font-size: 10px;
     background-color: var(--blue-5);
     color: white;
     content: 'TS';

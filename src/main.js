@@ -9,12 +9,14 @@ import ArticleView from './pages/article.vue'
 import ENLocales from './locales/en'
 import FRLocales from './locales/fr'
 import IndexView from './pages/index.vue'
+import BlogView from './pages/blog.vue'
 
 const head = createHead()
 
 const routes = [
   { path: '/', component: IndexView },
   { path: '/article', component: ArticleView },
+  { path: '/posts/:slug', component: BlogView },
 ]
 
 const i18n = createI18n({

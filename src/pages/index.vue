@@ -7,7 +7,7 @@
     <div class="profile-description">
       <ProfileDescription />
     </div>
-      <ProfileSocials />
+    <ProfileSocials />
   </div>
 </template>
 <style src="../styles/pages/index.scss" />
