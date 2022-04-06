@@ -5,10 +5,12 @@
       <LanguageSwitcher />
     </div>
     <div class="contact">
+     <a href="mailto:booleans.oss@gmail.com">
       <button class="btn">
         <IconMdi:hand-peace style="margin-right: 5px" />
         {{ $t('navbar.contact') }}
       </button>
+     </a>
     </div>
   </div>
 </template>
