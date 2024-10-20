@@ -1157,15 +1157,20 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/json@2.1.17":
-  version "2.1.17"
-  resolved "https://registry.npmjs.org/@iconify/json/-/json-2.1.17.tgz#e71d0ea147ccfc3ad30f6e3d177a4545dadbf5c1"
-  integrity sha512-MAEQEXjsUq7swM7CHxNiHMlR7kRDR5fiUPtSJhpxaRJTg/EGfnNfYYAIb91qnEn0ztIcLugtJOheA3u6lvNfHg==
+"@iconify/json@2.2.262":
+  version "2.2.262"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.262.tgz#1b7779773ec3c9fe76b83507734ee8198d0b5ee0"
+  integrity sha512-h7zMbLxsKohKXvf2Lpq6Xob7dxkqXxrUVR58ZvZBgCSrHcE69QJmcFG/KaAwM1eGuKToWvgPWeb1xE6zy7juqg==
   dependencies:
-    "@iconify/types" "^1.0.9"
-    pathe "^0.0.2"
+    "@iconify/types" "*"
+    pathe "^1.1.2"
 
-"@iconify/types@^1.0.12", "@iconify/types@^1.0.9":
+"@iconify/types@*":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
+  integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
+
+"@iconify/types@^1.0.12":
   version "1.0.12"
   resolved "https://registry.npmjs.org/@iconify/types/-/types-1.0.12.tgz#839f1f784b7030b94482d51996570f4dbd7d6796"
   integrity sha512-6er6wSGF3hgc1JEZqiGpg21CTCjHBYOUwqLmb2Idzkjiw6ogalGP0ZMLVutCzah+0WB4yP+Zd2oVPN8jvJ+Ftg==
@@ -5919,10 +5924,10 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pathe@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/pathe/-/pathe-0.0.2.tgz#d690780e578a8127e1d65828387609c153afc309"
-  integrity sha512-mmK20YtPb4yXHlaPuOD/uPIpRu7iIK45GA/GiRSlNpIdfWDG5aEQmFT1HHtBmJB+t/6DvFOtOsEipsPA8Bx2cw==
+pathe@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
+  integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
 
 picocolors@^0.2.1:
   version "0.2.1"
